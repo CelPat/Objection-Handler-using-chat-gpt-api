@@ -8,7 +8,7 @@ public class Main {
         int choice;
         do {
             System.out.println("0 - Exit the program.\n" +
-                    "1 - learn how to find objection");
+                    "1 - learn how to fight objection");
             choice = input.nextInt();
             input.nextLine();
             switch (choice){

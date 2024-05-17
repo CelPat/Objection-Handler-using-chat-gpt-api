@@ -31,7 +31,6 @@ public class ChatGPTAPI {
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
             writer.write(body);
             writer.flush();
-            // System.out.println("body: " + body);
             writer.close();
 
             // Response from ChatGPT
@@ -43,11 +42,9 @@ public class ChatGPTAPI {
                 response.append(line);
             }
             br.close();
-            //System.out.println("sout: " + response);
 
             return extractMessageFromJSONResponse(response.toString());
 
-            // return extractMessageFromJSONResponse(response.toString());
         }catch (IOException e){
             throw new RuntimeException(e);
         }
