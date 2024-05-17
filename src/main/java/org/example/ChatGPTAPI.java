@@ -37,7 +37,7 @@ public class ChatGPTAPI {
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String line;
 
-            StringBuffer response = new StringBuffer();
+            StringBuilder response = new StringBuilder();
             while ((line = br.readLine()) != null ){
                 response.append(line);
             }

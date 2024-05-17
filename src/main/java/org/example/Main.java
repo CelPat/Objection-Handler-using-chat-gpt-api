@@ -12,12 +12,8 @@ public class Main {
             choice = input.nextInt();
             input.nextLine();
             switch (choice){
-                case 0 ->{
-                    System.out.println("Bye bye");
-                }
-                case 1->{
-                    askChatGptAboutObjection();
-                }
+                case 0 -> System.out.println("Bye bye");
+                case 1-> askChatGptAboutObjection();
             }
         }while (choice!= EXIT);
     }
